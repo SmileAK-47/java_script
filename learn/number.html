@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <script type="text/javascript">
+            var number1 = +prompt("输入第一个数字");
+            var number2 = +prompt("输入第二个数字");
+            var number3 = +prompt("输入第三个数字");
+            // 先比较number 是否为最小  
+            // number1   number2  number3
+            if(number1<number2 && number1< number3){
+                if(number2<number3){
+                    alert(number1+","+number2+","+number3)
+                }else{
+                    alert(number1+","+number3+","+number2)
+                }
+            }else if(number2< number1&& number2<number3){
+                if(number1<number2){
+                    alert(number2+","+number1+","+number3)
+                }else{
+                    alert(number2+","+number3+","+number1)
+                }
+            }else if(number3<number1&&number3<number2){
+                if(number2<number1){
+                    alert(number3+","+number2+","+number1)
+                }else{
+                    alert(number3+","+number1+","+number2)
+                }
+            }
+
+            
+            
+        </script>
+    </head>
+</html>
